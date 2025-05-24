@@ -17,7 +17,6 @@ export default function Page() {
   const [error, setError] = useState("");
   const router = useRouter();
 
-  console.log(process.env.GOOGLE_CLIENT_ID, process.env.NEXTAUTH_URL,process.env.NEXTAUTH_SECRET);
   const handleGoogleSignIn = async () => {
     try {
       setIsLoading(true);

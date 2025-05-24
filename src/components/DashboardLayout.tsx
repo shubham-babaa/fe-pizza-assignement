@@ -29,7 +29,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   const { data: session } = useSession()
   const pathname = usePathname()
   const [sidebarOpen, setSidebarOpen] = useState(false)
-  console.log(process.env.GOOGLE_CLIENT_ID,process.env.NEXTAUTH_URL)
   const handleSignOut = () => {
     signOut({ callbackUrl: "/" })
   }
