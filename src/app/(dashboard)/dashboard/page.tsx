@@ -36,7 +36,7 @@ export default function DashboardPage() {
   ]
 
   return (
-    <div className="p-4">
+    <div className="p-0">
       <div className="max-w-7xl mx-auto">
         {/* Welcome Section */}
         <div className="mb-8">
