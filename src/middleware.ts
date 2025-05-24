@@ -8,7 +8,7 @@ export async function middleware(request: NextRequest) {
   const publicRoutes = ['/'];
 
   // Get the token from cookies (example: `next-auth.session-token`)
-  const token = request.cookies.get('next-auth.session-token')?.value; // for secure cookies
+  const token = request.cookies.get('__Secure-next-auth.session-token')?.value; // for secure cookies
 
   console.log("miodjdmiekmdceuoidm", request.nextUrl.pathname)
 
