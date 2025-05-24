@@ -31,7 +31,6 @@ export const authOptions: NextAuthOptions = {
       return token;
     },
   },
-  debug: true,
   pages: {
     signIn: "/",
     error: "/error", // Must match actual error page path
@@ -39,4 +38,5 @@ export const authOptions: NextAuthOptions = {
 };
 
 const handler = NextAuth(authOptions);
-export { handler as GET, handler as POST }
+
+export { handler as GET, handler as POST };
